@@ -54,18 +54,34 @@ class ProductViewSet(viewsets.ModelViewSet):
         return [IsAuthenticated()]
 
     def perform_create(self, serializer):
-        serializer.save(owner=self.request.user)
+            services.create_product(
+        {
+            **serializer.validated_data,
+            "owner": self.request.user,
+        },
+        actor=self.request.user,
+        request=self.request,
+    )
 
     def perform_update(self, serializer):
-        services.update_product(self.get_object(), serializer.validated_data)
+        services.update_product(
+            self.get_object(),
+            serializer.validated_data,
+            actor=self.request.user,
+            request=self.request,
+        )
 
     def perform_destroy(self, instance):
-        services.soft_delete_product(instance)
+        services.soft_delete_product(instance, actor=self.request.user, request=self.request)
 
     @action(detail=True, methods=["patch"])
     def restore(self, request, pk=None):
         product = Product.objects.get(id=pk)
-        product = services.restore_product(product)
+        product = services.restore_product(
+            product,
+            actor=request.user,
+            request=request,
+        )
         serializer = ProductDetailSerializer(product)
         return Response(serializer.data)
 

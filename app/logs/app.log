@@ -1,0 +1,579 @@
+2026-04-29 04:34:19,077 INFO Watching for file changes with StatReloader
+2026-04-29 04:34:42,412 INFO Watching for file changes with StatReloader
+2026-04-29 04:34:45,060 INFO request_id=25602fd1-6ded-4f4c-aa97-2f01f593bd64 method=GET path=/api/docs/ status=200 duration_ms=11 user=anonymous
+2026-04-29 04:34:45,061 INFO "GET /api/docs/ HTTP/1.1" 200 4667
+2026-04-29 04:39:11,734 INFO /app/config/settings/base.py changed, reloading.
+2026-04-29 04:39:13,079 INFO Watching for file changes with StatReloader
+2026-04-29 04:39:24,755 INFO /app/apps/audit/models.py changed, reloading.
+2026-04-29 04:39:26,137 INFO Watching for file changes with StatReloader
+2026-04-29 04:39:36,632 INFO /app/apps/audit/admin.py changed, reloading.
+2026-04-29 04:39:37,989 INFO Watching for file changes with StatReloader
+2026-04-29 04:50:51,071 INFO Watching for file changes with StatReloader
+2026-04-29 04:52:47,769 INFO /app/apps/audit/permissions.py changed, reloading.
+2026-04-29 04:52:49,110 INFO Watching for file changes with StatReloader
+2026-04-29 04:53:10,594 INFO Watching for file changes with StatReloader
+2026-04-29 04:53:11,773 INFO request_id=104b8efe-ea1e-4efe-b20f-7ea3e3b99d47 method=GET path=/api/docs/ status=200 duration_ms=14 user=anonymous
+2026-04-29 04:53:11,774 INFO "GET /api/docs/ HTTP/1.1" 200 4667
+2026-04-29 04:53:11,918 INFO request_id=9b0d6753-6320-47b3-ad20-50632ea702d0 method=GET path=/api/schema/ status=200 duration_ms=73 user=anonymous
+2026-04-29 04:53:11,919 INFO "GET /api/schema/ HTTP/1.1" 200 79163
+2026-04-29 04:54:36,440 INFO /app/apps/users/services.py changed, reloading.
+2026-04-29 04:54:38,076 INFO Watching for file changes with StatReloader
+2026-04-29 04:55:20,449 INFO /app/apps/users/services.py changed, reloading.
+2026-04-29 04:55:21,714 INFO Watching for file changes with StatReloader
+2026-04-29 04:56:49,591 INFO /app/apps/users/services.py changed, reloading.
+2026-04-29 04:56:50,880 INFO Watching for file changes with StatReloader
+2026-04-29 04:58:05,987 INFO /app/apps/users/views.py changed, reloading.
+2026-04-29 04:58:07,270 INFO Watching for file changes with StatReloader
+2026-04-29 04:59:43,027 INFO /app/apps/users/views.py changed, reloading.
+2026-04-29 04:59:44,302 INFO Watching for file changes with StatReloader
+2026-04-29 05:00:00,439 INFO /app/apps/users/views.py changed, reloading.
+2026-04-29 05:00:01,668 INFO Watching for file changes with StatReloader
+2026-04-29 05:00:33,103 INFO /app/apps/users/views.py changed, reloading.
+2026-04-29 05:00:34,561 INFO Watching for file changes with StatReloader
+2026-04-29 05:02:33,164 INFO /app/apps/products/services.py changed, reloading.
+2026-04-29 05:02:34,540 INFO Watching for file changes with StatReloader
+2026-04-29 05:03:08,187 INFO /app/apps/products/views.py changed, reloading.
+2026-04-29 05:03:09,432 INFO Watching for file changes with StatReloader
+2026-04-29 05:03:26,765 INFO /app/apps/products/views.py changed, reloading.
+2026-04-29 05:03:28,074 INFO Watching for file changes with StatReloader
+2026-04-29 05:04:00,595 INFO /app/apps/products/views.py changed, reloading.
+2026-04-29 05:04:01,803 INFO Watching for file changes with StatReloader
+2026-04-29 05:04:20,213 INFO /app/apps/products/views.py changed, reloading.
+2026-04-29 05:04:21,433 INFO Watching for file changes with StatReloader
+2026-04-29 05:04:41,947 INFO /app/apps/products/views.py changed, reloading.
+2026-04-29 05:04:43,312 INFO Watching for file changes with StatReloader
+2026-04-29 05:05:06,165 INFO /app/apps/products/views.py changed, reloading.
+2026-04-29 05:05:07,402 INFO Watching for file changes with StatReloader
+2026-04-29 05:05:36,819 INFO Watching for file changes with StatReloader
+2026-04-29 05:05:45,901 INFO request_id=01edb0e3-5264-4979-9822-79e9a5761658 method=GET path=/api/docs/ status=200 duration_ms=13 user=anonymous
+2026-04-29 05:05:45,902 INFO "GET /api/docs/ HTTP/1.1" 200 4667
+2026-04-29 05:05:46,046 INFO request_id=de2c5585-4c04-45f5-92b8-ef200be82b1f method=GET path=/api/schema/ status=200 duration_ms=73 user=anonymous
+2026-04-29 05:05:46,047 INFO "GET /api/schema/ HTTP/1.1" 200 79163
+2026-04-29 05:06:10,847 ERROR Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedTable: relation "users" does not exist
+LINE 1: ... "users"."created_at", "users"."modified_at" FROM "users" WH...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 73, in validate
+    data = super().validate(attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 54, in validate
+    self.user = authenticate(**authenticate_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: relation "users" does not exist
+LINE 1: ... "users"."created_at", "users"."modified_at" FROM "users" WH...
+                                                             ^
+2026-04-29 05:06:10,851 INFO request_id=e4a6aceb-5ee1-4f1d-8e79-594f48d06d21 method=POST path=/api/v1/auth/login/ status=500 duration_ms=47 user=anonymous
+2026-04-29 05:06:10,852 ERROR "POST /api/v1/auth/login/ HTTP/1.1" 500 20886
+2026-04-29 05:07:54,414 INFO request_id=f8bf7acd-0265-4a98-9895-260003824fc5 method=POST path=/api/v1/auth/login/ status=200 duration_ms=181 user=anonymous
+2026-04-29 05:07:54,415 INFO "POST /api/v1/auth/login/ HTTP/1.1" 200 582
+2026-04-29 05:08:40,931 INFO request_id=ceffebd8-1e4a-4879-b6db-eee759ed81c9 method=POST path=/api/v1/products/ status=403 duration_ms=11 user=admin@gmail.com
+2026-04-29 05:08:40,932 WARNING Forbidden: /api/v1/products/
+2026-04-29 05:08:40,932 WARNING "POST /api/v1/products/ HTTP/1.1" 403 63
+2026-04-29 05:08:56,777 INFO request_id=2a56ed4d-d029-4824-8244-97f085f7c362 method=GET path=/api/v1/audit-logs/ status=403 duration_ms=10 user=admin@gmail.com
+2026-04-29 05:08:56,777 WARNING Forbidden: /api/v1/audit-logs/
+2026-04-29 05:08:56,778 WARNING "GET /api/v1/audit-logs/ HTTP/1.1" 403 63
+2026-04-29 05:09:05,585 INFO request_id=e7515b83-f307-4c0b-b078-4698c59f95d3 method=GET path=/api/v1/products/ status=200 duration_ms=13 user=admin@gmail.com
+2026-04-29 05:09:05,585 INFO "GET /api/v1/products/ HTTP/1.1" 200 2
+2026-04-29 05:09:12,777 INFO request_id=0bab748f-d8b9-4b0d-9b4d-9e68d9d928df method=POST path=/api/v1/products/ status=403 duration_ms=10 user=admin@gmail.com
+2026-04-29 05:09:12,778 WARNING Forbidden: /api/v1/products/
+2026-04-29 05:09:12,778 WARNING "POST /api/v1/products/ HTTP/1.1" 403 63
+2026-04-29 05:09:59,629 INFO request_id=aca39468-e55d-4a83-a310-18504e795e3a method=GET path=/admin/ status=302 duration_ms=17 user=anonymous
+2026-04-29 05:09:59,630 INFO "GET /admin/ HTTP/1.1" 302 0
+2026-04-29 05:09:59,657 INFO request_id=0a2a7463-e0a4-4b37-b9fb-45fc19bc4d32 method=GET path=/admin/login/ status=200 duration_ms=23 user=anonymous
+2026-04-29 05:09:59,658 INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+2026-04-29 05:09:59,692 INFO "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2026-04-29 05:09:59,696 INFO "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+2026-04-29 05:09:59,700 INFO "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+2026-04-29 05:09:59,700 INFO "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+2026-04-29 05:09:59,701 INFO "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2026-04-29 05:09:59,701 INFO "GET /static/admin/css/login.css HTTP/1.1" 304 0
+2026-04-29 05:09:59,704 INFO "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+2026-04-29 05:10:08,862 INFO request_id=bd6e81d0-e208-46cb-9514-3860531879a4 method=POST path=/admin/login/ status=302 duration_ms=170 user=admin@gmail.com
+2026-04-29 05:10:08,864 INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2026-04-29 05:10:08,894 INFO request_id=5e37abee-90c6-464d-805f-40a9b77ef50d method=GET path=/admin/ status=200 duration_ms=26 user=admin@gmail.com
+2026-04-29 05:10:08,895 INFO "GET /admin/ HTTP/1.1" 200 8702
+2026-04-29 05:10:08,923 INFO "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+2026-04-29 05:10:08,923 INFO "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+2026-04-29 05:10:08,923 INFO "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+2026-04-29 05:10:24,861 INFO request_id=3ee32893-6b44-466c-a668-55d99d35abf7 method=GET path=/admin/users/user/ status=200 duration_ms=47 user=admin@gmail.com
+2026-04-29 05:10:24,862 INFO "GET /admin/users/user/ HTTP/1.1" 200 15665
+2026-04-29 05:10:24,892 INFO "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+2026-04-29 05:10:24,893 INFO "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+2026-04-29 05:10:24,894 INFO "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+2026-04-29 05:10:24,894 INFO "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+2026-04-29 05:10:24,895 INFO "GET /static/admin/js/core.js HTTP/1.1" 304 0
+2026-04-29 05:10:24,898 INFO "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+2026-04-29 05:10:24,898 INFO "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+2026-04-29 05:10:24,899 INFO "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+2026-04-29 05:10:24,899 INFO "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+2026-04-29 05:10:24,909 INFO request_id=65ba7590-9b06-4de6-bcd2-c7ab068d1e9f method=GET path=/admin/jsi18n/ status=200 duration_ms=20 user=admin@gmail.com
+2026-04-29 05:10:24,910 INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2026-04-29 05:10:24,915 INFO "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+2026-04-29 05:10:24,953 INFO "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+2026-04-29 05:10:24,962 INFO "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+2026-04-29 05:10:24,965 INFO "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+2026-04-29 05:10:24,967 INFO "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+2026-04-29 05:10:24,969 INFO "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+2026-04-29 05:10:24,969 INFO "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+2026-04-29 05:10:29,254 INFO request_id=037371ed-ff98-4bf8-b005-fe9bef59c7be method=GET path=/admin/users/user/174f174d-2836-4b5d-83be-80c6065c679b/change/ status=200 duration_ms=75 user=admin@gmail.com
+2026-04-29 05:10:29,255 INFO "GET /admin/users/user/174f174d-2836-4b5d-83be-80c6065c679b/change/ HTTP/1.1" 200 38159
+2026-04-29 05:10:29,285 INFO "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+2026-04-29 05:10:29,287 INFO "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+2026-04-29 05:10:29,288 INFO "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+2026-04-29 05:10:29,288 INFO "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+2026-04-29 05:10:29,288 INFO "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+2026-04-29 05:10:29,291 INFO "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+2026-04-29 05:10:29,300 INFO request_id=81a651dc-9f75-4705-bc23-73f6301c0bf7 method=GET path=/admin/jsi18n/ status=200 duration_ms=18 user=admin@gmail.com
+2026-04-29 05:10:29,300 INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2026-04-29 05:10:29,336 INFO "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+2026-04-29 05:10:29,345 INFO "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+2026-04-29 05:10:29,436 INFO "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+2026-04-29 05:10:29,436 INFO "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+2026-04-29 05:10:29,436 INFO "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+2026-04-29 05:10:38,954 INFO request_id=a0e673bc-146d-4a69-a65a-40182c44e397 method=POST path=/admin/users/user/174f174d-2836-4b5d-83be-80c6065c679b/change/ status=302 duration_ms=129 user=admin@gmail.com
+2026-04-29 05:10:38,955 INFO "POST /admin/users/user/174f174d-2836-4b5d-83be-80c6065c679b/change/ HTTP/1.1" 302 0
+2026-04-29 05:10:38,984 INFO request_id=b46b1bdd-5743-4616-b578-ba4e2b20b909 method=GET path=/admin/users/user/ status=200 duration_ms=25 user=admin@gmail.com
+2026-04-29 05:10:38,985 INFO "GET /admin/users/user/ HTTP/1.1" 200 15901
+2026-04-29 05:10:39,024 INFO request_id=0bf18c27-9d5c-44f1-ad61-a4e02aea8030 method=GET path=/admin/jsi18n/ status=200 duration_ms=14 user=admin@gmail.com
+2026-04-29 05:10:39,024 INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2026-04-29 05:10:46,817 INFO request_id=87a7acf9-2e6d-4120-8871-62465ef68366 method=POST path=/api/v1/auth/login/ status=401 duration_ms=166 user=anonymous
+2026-04-29 05:10:46,818 WARNING Unauthorized: /api/v1/auth/login/
+2026-04-29 05:10:46,818 WARNING "POST /api/v1/auth/login/ HTTP/1.1" 401 63
+2026-04-29 05:10:59,832 INFO request_id=2064648d-b5f5-4895-9d5f-c123ad55ce3d method=POST path=/api/v1/auth/login/ status=200 duration_ms=157 user=anonymous
+2026-04-29 05:10:59,833 INFO "POST /api/v1/auth/login/ HTTP/1.1" 200 582
+2026-04-29 05:11:16,553 INFO request_id=b16a1890-80f6-44c6-a86a-7f7af97f6d66 method=POST path=/api/v1/products/ status=400 duration_ms=16 user=admin@gmail.com
+2026-04-29 05:11:16,554 WARNING Bad Request: /api/v1/products/
+2026-04-29 05:11:16,555 WARNING "POST /api/v1/products/ HTTP/1.1" 400 82
+2026-04-29 05:11:29,757 INFO request_id=441b259e-bdd6-4f9e-b0ba-54bdbd78f791 method=POST path=/api/v1/products/ status=400 duration_ms=16 user=admin@gmail.com
+2026-04-29 05:11:29,758 WARNING Bad Request: /api/v1/products/
+2026-04-29 05:11:29,758 WARNING "POST /api/v1/products/ HTTP/1.1" 400 37
+2026-04-29 05:12:02,168 INFO request_id=f21fc6b0-867b-4780-aa46-8435a0d5f1ef method=POST path=/api/v1/products/ status=201 duration_ms=71 user=admin@gmail.com
+2026-04-29 05:12:02,170 INFO "POST /api/v1/products/ HTTP/1.1" 201 161
+2026-04-29 05:12:18,771 INFO request_id=bd27c8cf-e09b-4096-96e5-6a5a0954a5e2 method=POST path=/api/v1/products/ status=201 duration_ms=19 user=admin@gmail.com
+2026-04-29 05:12:18,771 INFO "POST /api/v1/products/ HTTP/1.1" 201 185
+2026-04-29 05:12:42,053 INFO request_id=89be6dda-b4b8-42e2-ad7d-016eb5bfbd5a method=GET path=/api/v1/products/ status=200 duration_ms=17 user=admin@gmail.com
+2026-04-29 05:12:42,054 INFO "GET /api/v1/products/ HTTP/1.1" 200 347
+2026-04-29 05:13:00,979 INFO request_id=ca1e871f-4752-4013-a24e-1206501ac50e method=DELETE path=/api/v1/products/bc83da80-f91e-41c5-be02-acf3a3fc1dad/ status=204 duration_ms=15 user=admin@gmail.com
+2026-04-29 05:13:00,979 INFO "DELETE /api/v1/products/bc83da80-f91e-41c5-be02-acf3a3fc1dad/ HTTP/1.1" 204 0
+2026-04-29 05:13:29,978 INFO request_id=2c7cdbf1-cf79-4d53-99e5-deaa13978880 method=PATCH path=/api/v1/products/bc83da80-f91e-41c5-be02-acf3a3fc1dad/restore/ status=200 duration_ms=23 user=admin@gmail.com
+2026-04-29 05:13:29,979 INFO "PATCH /api/v1/products/bc83da80-f91e-41c5-be02-acf3a3fc1dad/restore/ HTTP/1.1" 200 449
+2026-04-29 05:13:47,005 INFO request_id=030baac5-71ee-453c-b277-42cdac9e19c6 method=GET path=/api/v1/audit-logs/ status=200 duration_ms=17 user=admin@gmail.com
+2026-04-29 05:13:47,006 INFO "GET /api/v1/audit-logs/ HTTP/1.1" 200 1668
+2026-04-29 05:18:29,635 INFO /app/config/urls.py changed, reloading.
+2026-04-29 05:18:31,267 INFO Watching for file changes with StatReloader
+2026-04-29 05:19:51,862 INFO Watching for file changes with StatReloader
+2026-04-29 05:20:50,914 ERROR Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedTable: relation "users" does not exist
+LINE 1: ... "users"."created_at", "users"."modified_at" FROM "users" WH...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 73, in validate
+    data = super().validate(attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 54, in validate
+    self.user = authenticate(**authenticate_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: relation "users" does not exist
+LINE 1: ... "users"."created_at", "users"."modified_at" FROM "users" WH...
+                                                             ^
+2026-04-29 05:20:50,918 INFO request_id=f2a7c437-6017-4cc9-bc1c-7efe711711d8 method=POST path=/api/v1/auth/login/ status=500 duration_ms=74 user=anonymous
+2026-04-29 05:20:50,919 ERROR "POST /api/v1/auth/login/ HTTP/1.1" 500 208640
+2026-04-29 05:22:36,996 INFO Watching for file changes with StatReloader
+2026-04-29 05:23:32,437 INFO request_id=a41c15d4-e2fd-4168-b330-54658830ff4a method=POST path=/api/v1/auth/login/ status=200 duration_ms=176 user=anonymous
+2026-04-29 05:23:32,438 INFO "POST /api/v1/auth/login/ HTTP/1.1" 200 582
+2026-04-29 05:23:52,786 INFO request_id=929a0755-433b-4e52-9541-45c7a975d2c9 method=GET path=/api/docs/ status=200 duration_ms=13 user=anonymous
+2026-04-29 05:23:52,787 INFO "GET /api/docs/ HTTP/1.1" 200 4667
+2026-04-29 05:23:52,958 INFO request_id=0066f611-fe74-467b-bc75-480e5150a84c method=GET path=/api/schema/ status=200 duration_ms=92 user=anonymous
+2026-04-29 05:23:52,959 INFO "GET /api/schema/ HTTP/1.1" 200 79139
+2026-04-29 05:23:57,618 INFO request_id=aa6328c5-e11e-4ac6-ad9e-3413dc8be440 method=GET path=/api/docs/ status=200 duration_ms=0 user=anonymous
+2026-04-29 05:23:57,619 INFO "GET /api/docs/ HTTP/1.1" 200 4667
+2026-04-29 05:23:57,730 INFO request_id=a7a393bd-aa94-43a6-8670-b3254e3081b8 method=GET path=/api/schema/ status=200 duration_ms=53 user=anonymous
+2026-04-29 05:23:57,731 INFO "GET /api/schema/ HTTP/1.1" 200 79139
+2026-04-29 05:24:35,206 INFO request_id=146a682d-df44-4ddb-a901-ff9d2d1920a8 method=POST path=/api/v1/auth/refresh/ status=200 duration_ms=12 user=anonymous
+2026-04-29 05:24:35,207 INFO "POST /api/v1/auth/refresh/ HTTP/1.1" 200 290
+2026-04-29 05:24:42,023 INFO request_id=ae27e2dc-ecc3-4f74-9645-074a6e64be2d method=GET path=/api/v1/audit-logs/ status=403 duration_ms=9 user=admin@gmail.com
+2026-04-29 05:24:42,024 WARNING Forbidden: /api/v1/audit-logs/
+2026-04-29 05:24:42,024 WARNING "GET /api/v1/audit-logs/ HTTP/1.1" 403 63
+2026-04-29 05:26:08,242 INFO request_id=63b69a8d-40e3-49a4-b6a5-c5d642854131 method=POST path=/api/v1/auth/refresh/ status=200 duration_ms=59 user=anonymous
+2026-04-29 05:26:08,243 INFO "POST /api/v1/auth/refresh/ HTTP/1.1" 200 290
+2026-04-29 05:26:13,002 INFO request_id=12c99986-52f4-4e2b-83ac-2d4fcc1a2712 method=GET path=/api/v1/audit-logs/ status=200 duration_ms=13 user=admin@gmail.com
+2026-04-29 05:26:13,002 INFO "GET /api/v1/audit-logs/ HTTP/1.1" 200 2
+2026-04-29 05:27:12,445 INFO request_id=eaa387cc-98bf-407d-ad56-6d13a9ae91e4 method=GET path=/api/v1/audit-logs/ status=200 duration_ms=17 user=admin@gmail.com
+2026-04-29 05:27:12,446 INFO "GET /api/v1/audit-logs/ HTTP/1.1" 200 2
+2026-04-29 05:27:21,611 INFO request_id=9f3fe7e2-711c-4115-9ca9-81d45b053855 method=POST path=/api/v1/auth/refresh/ status=200 duration_ms=53 user=anonymous
+2026-04-29 05:27:21,612 INFO "POST /api/v1/auth/refresh/ HTTP/1.1" 200 290
+2026-04-29 05:29:56,084 INFO /app/config/urls.py changed, reloading.
+2026-04-29 05:29:57,417 INFO Watching for file changes with StatReloader
+2026-04-29 05:31:48,987 INFO Watching for file changes with StatReloader
+2026-04-29 05:32:23,318 ERROR Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedTable: relation "users" does not exist
+LINE 1: ... "users"."created_at", "users"."modified_at" FROM "users" WH...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/users/auth_views.py", line 12, in post
+    response = super().post(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 73, in validate
+    data = super().validate(attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 54, in validate
+    self.user = authenticate(**authenticate_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: relation "users" does not exist
+LINE 1: ... "users"."created_at", "users"."modified_at" FROM "users" WH...
+                                                             ^
+2026-04-29 05:32:23,326 INFO request_id=9840028f-39e1-4c2a-b07d-e5dd9ce92df2 method=POST path=/api/v1/auth/login/ status=500 duration_ms=65 user=anonymous
+2026-04-29 05:32:23,327 ERROR "POST /api/v1/auth/login/ HTTP/1.1" 500 213036
+2026-04-29 05:34:44,532 INFO request_id=7f00d060-4051-4a43-a291-5b2b1dbea00e method=POST path=/api/v1/auth/login/ status=200 duration_ms=185 user=anonymous
+2026-04-29 05:34:44,533 INFO "POST /api/v1/auth/login/ HTTP/1.1" 200 582
+2026-04-29 05:35:38,756 INFO request_id=ded5caca-1546-4f01-844a-50d0f8d8d537 method=POST path=/api/v1/auth/refresh/ status=200 duration_ms=53 user=anonymous
+2026-04-29 05:35:38,757 INFO "POST /api/v1/auth/refresh/ HTTP/1.1" 200 290
+2026-04-29 05:38:54,480 INFO request_id=db0cc242-1112-47c3-bb53-93e21342769e method=POST path=/api/v1/auth/login/ status=200 duration_ms=366 user=anonymous
+2026-04-29 05:38:54,785 INFO request_id=eccb223d-87b1-4d9a-998a-25a314836212 method=POST path=/api/v1/auth/login/ status=200 duration_ms=150 user=anonymous
+2026-04-29 05:38:54,789 INFO request_id=f9fe5491-77f0-44c6-a16c-1f270a31ab7a method=POST path=/api/v1/auth/refresh/ status=200 duration_ms=2 user=anonymous
+2026-04-29 05:38:54,945 INFO request_id=14960506-8025-483b-9b51-90ccd183d8c5 method=POST path=/api/v1/products/ status=201 duration_ms=5 user=admin@example.com
+2026-04-29 05:38:55,106 INFO request_id=c7437a42-7f40-4222-ada9-3adbfffd6ad2 method=DELETE path=/api/v1/products/a4acf4c3-1b3b-4f19-b43e-09407f434c82/ status=204 duration_ms=4 user=admin@example.com
+2026-04-29 05:38:55,434 INFO request_id=74cc0436-0991-41ad-b510-0981bcd92da7 method=PATCH path=/api/v1/users/d1020a0d-8f42-438f-a7dd-bf3df54946b3/set_role/ status=200 duration_ms=11 user=admin@example.com
+2026-04-29 05:38:55,615 INFO request_id=d50ab6c8-178e-465d-b122-ec541a589bb5 method=GET path=/api/v1/audit-logs/ status=200 duration_ms=3 user=admin@example.com
+2026-04-29 05:38:55,775 INFO request_id=e70080cb-fd65-4c0c-83fb-0afe2f1e6e72 method=GET path=/api/v1/audit-logs/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 05:38:55,777 WARNING Forbidden: /api/v1/audit-logs/
+2026-04-29 05:38:56,099 INFO request_id=9ae469d7-b89d-483c-8c1b-bd9939dbbc05 method=POST path=/api/v1/auth/login/ status=200 duration_ms=156 user=anonymous
+2026-04-29 05:38:56,407 INFO request_id=cde1e885-3951-41f5-a8ca-e42122964b8a method=POST path=/api/v1/auth/login/ status=401 duration_ms=153 user=anonymous
+2026-04-29 05:38:56,408 WARNING Unauthorized: /api/v1/auth/login/
+2026-04-29 05:38:56,711 INFO request_id=1de859af-7218-4559-9461-dbc3f760337d method=POST path=/api/v1/auth/login/ status=200 duration_ms=146 user=anonymous
+2026-04-29 05:38:56,715 INFO request_id=73cd654e-be65-4642-8616-59c2b656b48f method=POST path=/api/v1/auth/refresh/ status=200 duration_ms=2 user=anonymous
+2026-04-29 05:38:56,874 INFO request_id=31cd5ef3-2516-4021-bffe-9a66ba34bd51 method=POST path=/api/v1/products/ status=201 duration_ms=4 user=admin@example.com
+2026-04-29 05:38:57,031 INFO request_id=7f294265-b95c-4e10-8da3-6493a9467a79 method=POST path=/api/v1/products/ status=201 duration_ms=5 user=staff@example.com
+2026-04-29 05:38:57,185 INFO request_id=85ef7b09-dc81-46bc-bf07-8e28623a18bd method=POST path=/api/v1/products/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 05:38:57,186 WARNING Forbidden: /api/v1/products/
+2026-04-29 05:38:57,490 INFO request_id=c565303b-7605-485f-8d7c-20be1bbfd0a1 method=GET path=/api/v1/products/ status=200 duration_ms=3 user=customer@example.com
+2026-04-29 05:38:57,644 INFO request_id=cc25c1da-934e-42f0-b504-a16fd4645cc2 method=DELETE path=/api/v1/products/34b2ead0-8a24-4d91-9029-70d0a54780c6/ status=204 duration_ms=3 user=admin@example.com
+2026-04-29 05:38:57,942 INFO request_id=9cad682f-8534-4041-9390-ba7b95c1cc90 method=DELETE path=/api/v1/products/46d4b7e3-ac7d-4484-a575-9257e6a27336/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 05:38:57,943 WARNING Forbidden: /api/v1/products/46d4b7e3-ac7d-4484-a575-9257e6a27336/
+2026-04-29 05:38:58,101 INFO request_id=b2ce8e77-9e4b-4dc6-b0a7-28f9274f23a2 method=GET path=/api/v1/products/search/ status=200 duration_ms=4 user=admin@example.com
+2026-04-29 05:38:58,260 INFO request_id=99f57991-81d4-403a-8dbf-15d7081e0466 method=GET path=/api/v1/products/by_price/ status=200 duration_ms=3 user=admin@example.com
+2026-04-29 05:38:58,585 INFO request_id=5808256c-68c7-48ec-be5a-f9a4c42cc1b0 method=PATCH path=/api/v1/products/4ebd85ec-ff9b-4080-93ef-ce6f3df84c6a/ status=200 duration_ms=4 user=staff@example.com
+2026-04-29 05:38:58,746 INFO request_id=806143ae-6150-49e5-b165-b2a04a5deca7 method=PATCH path=/api/v1/products/a00aac7c-d0ec-4214-a5c7-c42a707f08f0/restore/ status=200 duration_ms=4 user=admin@example.com
+2026-04-29 05:38:59,048 INFO request_id=fde90d84-eddf-41c2-a649-8c4b24c3018a method=GET path=/api/v1/products/ status=200 duration_ms=3 user=customer@example.com
+2026-04-29 05:38:59,201 INFO request_id=f43fb8e2-492e-4b25-9949-eb81b3abd4a7 method=POST path=/api/v1/products/ status=400 duration_ms=2 user=admin@example.com
+2026-04-29 05:38:59,201 WARNING Bad Request: /api/v1/products/
+2026-04-29 05:38:59,353 INFO request_id=eb45d3c4-0266-4287-85f5-f20a562dfb68 method=POST path=/api/v1/products/ status=400 duration_ms=1 user=admin@example.com
+2026-04-29 05:38:59,354 WARNING Bad Request: /api/v1/products/
+2026-04-29 05:38:59,518 INFO request_id=41a32776-a3b1-40c6-a612-e916bbdc3732 method=GET path=/api/v1/products/search/ status=200 duration_ms=2 user=admin@example.com
+2026-04-29 05:38:59,718 INFO request_id=3033aa0a-f7c5-4cc3-8b12-78f1fef5ca68 method=POST path=/api/v1/users/ status=201 duration_ms=194 user=anonymous
+2026-04-29 05:39:00,023 INFO request_id=c474b02b-10ca-4e76-84df-307a22b49057 method=GET path=/api/v1/users/ status=200 duration_ms=3 user=admin@example.com
+2026-04-29 05:39:00,174 INFO request_id=8136f440-4981-4d70-ada0-5e885ba2bb43 method=GET path=/api/v1/users/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 05:39:00,174 WARNING Forbidden: /api/v1/users/
+2026-04-29 05:39:00,339 INFO request_id=cf8c5863-da90-4ebf-8a35-6aaccfb72393 method=GET path=/api/v1/users/me/ status=200 duration_ms=4 user=customer@example.com
+2026-04-29 05:39:00,653 INFO request_id=618bad59-e2d2-4e3a-a897-05b6b1eee953 method=PATCH path=/api/v1/users/5bbfd6b9-2f06-4b9a-b496-4db8de8aaaa5/set_role/ status=200 duration_ms=7 user=admin@example.com
+2026-04-29 05:39:00,811 INFO request_id=ce5b6841-7cbe-4884-8d2f-d94c5d22bd17 method=PATCH path=/api/v1/users/me/ status=200 duration_ms=5 user=customer@example.com
+2026-04-29 05:39:01,110 INFO request_id=5b819c42-828a-46fd-a4bc-8c2f62b62140 method=DELETE path=/api/v1/users/5e7238ee-5754-4735-a3e8-3a22c176f83a/ status=204 duration_ms=3 user=admin@example.com
+2026-04-29 05:39:01,422 INFO request_id=a324a89f-c1a2-4bbf-81a2-9f3b5c78a250 method=PATCH path=/api/v1/users/00df6f06-25a6-4bf3-a5d5-1940480b9565/restore/ status=200 duration_ms=6 user=admin@example.com
+2026-04-29 05:39:01,576 INFO request_id=36e0588e-3551-4139-b626-35644d518dc1 method=PATCH path=/api/v1/users/3d4778a8-d067-4847-a4af-03a04c1076cd/set_role/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 05:39:01,576 WARNING Forbidden: /api/v1/users/3d4778a8-d067-4847-a4af-03a04c1076cd/set_role/
+2026-04-29 05:39:01,878 INFO request_id=95c3c50d-0895-429d-9320-2e393babb6e5 method=PATCH path=/api/v1/users/e52124e9-c6cd-4e9b-93cc-fe43d25692c2/set_role/ status=400 duration_ms=0 user=admin@example.com
+2026-04-29 05:39:01,879 WARNING Bad Request: /api/v1/users/e52124e9-c6cd-4e9b-93cc-fe43d25692c2/set_role/
+2026-04-29 05:39:09,943 INFO request_id=bd6d5509-d523-4b68-b042-cf4a394cf8e7 method=POST path=/api/v1/auth/login/ status=200 duration_ms=627 user=anonymous
+2026-04-29 05:39:10,268 INFO request_id=a3e0f6e5-db71-4a91-ad39-ea5e7f347a46 method=POST path=/api/v1/auth/login/ status=200 duration_ms=160 user=anonymous
+2026-04-29 05:39:10,274 INFO request_id=6b8c0fcf-bb6f-4241-a25a-fb80a069ba8b method=POST path=/api/v1/auth/refresh/ status=200 duration_ms=4 user=anonymous
+2026-04-29 05:39:10,441 INFO request_id=bc3d5a1c-3f98-4509-b234-3165a0a4f785 method=POST path=/api/v1/products/ status=201 duration_ms=7 user=admin@example.com
+2026-04-29 05:39:10,634 INFO request_id=cd9b9166-f171-4783-8f85-ea15794f8d92 method=DELETE path=/api/v1/products/9f4b78d6-c4d8-4140-b54e-052d2699ed77/ status=204 duration_ms=5 user=admin@example.com
+2026-04-29 05:39:10,977 INFO request_id=be0fc625-fda6-46ed-a049-4ba1bcf0c0f3 method=PATCH path=/api/v1/users/492dda03-b9dd-45c5-9662-dd91d373d1ae/set_role/ status=200 duration_ms=12 user=admin@example.com
+2026-04-29 05:39:11,156 INFO request_id=e7e7c5f0-de0b-47f7-a769-1c9ec8d1aff7 method=GET path=/api/v1/audit-logs/ status=200 duration_ms=4 user=admin@example.com
+2026-04-29 05:39:11,327 INFO request_id=24013873-31ab-4a0a-9911-740f7cf76fcc method=GET path=/api/v1/audit-logs/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 05:39:11,329 WARNING Forbidden: /api/v1/audit-logs/
+2026-04-29 05:39:11,672 INFO request_id=4367f5bd-cbbf-4d93-8d1b-fe0993a4ad7e method=POST path=/api/v1/auth/login/ status=200 duration_ms=148 user=anonymous
+2026-04-29 05:39:11,985 INFO request_id=e78877e1-b317-4d42-8be9-06f9294a7ea9 method=POST path=/api/v1/auth/login/ status=401 duration_ms=147 user=anonymous
+2026-04-29 05:39:11,986 WARNING Unauthorized: /api/v1/auth/login/
+2026-04-29 05:39:12,298 INFO request_id=6a2262c5-b5a8-49a2-8b6d-0d292d71fd5e method=POST path=/api/v1/auth/login/ status=200 duration_ms=146 user=anonymous
+2026-04-29 05:39:12,303 INFO request_id=8d7ae912-fc57-4d88-8ec4-be6e0ec2b301 method=POST path=/api/v1/auth/refresh/ status=200 duration_ms=3 user=anonymous
+2026-04-29 05:39:12,478 INFO request_id=b0b57587-8196-41ea-9032-5aa20af2700f method=POST path=/api/v1/products/ status=201 duration_ms=5 user=admin@example.com
+2026-04-29 05:39:12,654 INFO request_id=9796bd98-1c4e-4318-a378-95e6348b43d2 method=POST path=/api/v1/products/ status=201 duration_ms=5 user=staff@example.com
+2026-04-29 05:39:12,828 INFO request_id=48980adc-3fa1-4d78-a1b8-1df36d0bd343 method=POST path=/api/v1/products/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 05:39:12,829 WARNING Forbidden: /api/v1/products/
+2026-04-29 05:39:13,170 INFO request_id=ea9ea0a0-b4a2-4057-b76b-f571025c725c method=GET path=/api/v1/products/ status=200 duration_ms=4 user=customer@example.com
+2026-04-29 05:39:13,346 INFO request_id=e15cddac-e8b1-46b4-893e-54a7779726b7 method=DELETE path=/api/v1/products/50a01d18-8d72-4556-a762-0e550ad04485/ status=204 duration_ms=4 user=admin@example.com
+2026-04-29 05:39:13,685 INFO request_id=909da9bd-1d55-45a9-8ba2-dc5a0bdf6014 method=DELETE path=/api/v1/products/29bb8bb2-6f87-4dbb-a273-898eb36f8328/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 05:39:13,686 WARNING Forbidden: /api/v1/products/29bb8bb2-6f87-4dbb-a273-898eb36f8328/
+2026-04-29 05:39:13,870 INFO request_id=1ba76c7a-26f4-4067-9100-51b102996736 method=GET path=/api/v1/products/search/ status=200 duration_ms=5 user=admin@example.com
+2026-04-29 05:39:14,034 INFO request_id=6038d24a-b566-4741-992d-45ec1440eacd method=GET path=/api/v1/products/by_price/ status=200 duration_ms=5 user=admin@example.com
+2026-04-29 05:39:14,337 INFO request_id=61314be2-326a-4a86-8b7a-8a5e02f1033f method=PATCH path=/api/v1/products/035d7e56-5f9b-4955-bd98-3bd1ab17d459/ status=200 duration_ms=6 user=staff@example.com
+2026-04-29 05:39:14,500 INFO request_id=2a7c8d95-39fa-4f5e-9d28-3d4b336a6881 method=PATCH path=/api/v1/products/ace56d5b-2a56-4c0d-9ee9-a3189c284fa7/restore/ status=200 duration_ms=8 user=admin@example.com
+2026-04-29 05:39:14,828 INFO request_id=3d193f13-8c3d-4360-9827-d43247d7c4af method=GET path=/api/v1/products/ status=200 duration_ms=5 user=customer@example.com
+2026-04-29 05:39:14,989 INFO request_id=84db0b3a-4537-4cf7-9bb1-b29edd92f796 method=POST path=/api/v1/products/ status=400 duration_ms=3 user=admin@example.com
+2026-04-29 05:39:14,990 WARNING Bad Request: /api/v1/products/
+2026-04-29 05:39:15,145 INFO request_id=e35bf765-248a-4bf7-99c7-b86cdcaa96e4 method=POST path=/api/v1/products/ status=400 duration_ms=2 user=admin@example.com
+2026-04-29 05:39:15,145 WARNING Bad Request: /api/v1/products/
+2026-04-29 05:39:15,301 INFO request_id=230853be-4e30-4f84-ae7c-fea3b6a49c69 method=GET path=/api/v1/products/search/ status=200 duration_ms=2 user=admin@example.com
+2026-04-29 05:39:15,570 INFO request_id=236d5fff-2ee4-4e45-ad8d-a680c7e3b7d9 method=POST path=/api/v1/users/ status=201 duration_ms=261 user=anonymous
+2026-04-29 05:39:15,876 INFO request_id=ec69b756-ca82-4a64-b1d5-6fe7e73902ee method=GET path=/api/v1/users/ status=200 duration_ms=5 user=admin@example.com
+2026-04-29 05:39:16,044 INFO request_id=af67eb44-6e96-410e-91a9-9ec6e6f1678c method=GET path=/api/v1/users/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 05:39:16,044 WARNING Forbidden: /api/v1/users/
+2026-04-29 05:39:16,203 INFO request_id=ce26676d-4c83-4455-a0fb-fc8b2b1942e8 method=GET path=/api/v1/users/me/ status=200 duration_ms=6 user=customer@example.com
+2026-04-29 05:39:16,527 INFO request_id=ea44c916-22e2-4e86-a368-8dd3b5610275 method=PATCH path=/api/v1/users/48150e5a-03aa-4e95-b1ec-56680b44b1d8/set_role/ status=200 duration_ms=10 user=admin@example.com
+2026-04-29 05:39:16,692 INFO request_id=1c487955-9e43-47ae-9342-03f859f60da6 method=PATCH path=/api/v1/users/me/ status=200 duration_ms=9 user=customer@example.com
+2026-04-29 05:39:17,010 INFO request_id=ad631533-3d2f-4087-bb7d-8e2f7f33fdaa method=DELETE path=/api/v1/users/79f3d0b4-65f6-4627-bf01-cf9db885c31a/ status=204 duration_ms=4 user=admin@example.com
+2026-04-29 05:39:17,322 INFO request_id=9b3dc0e7-4fd7-46d0-91ac-5c92c652959e method=PATCH path=/api/v1/users/52793268-0bf8-4e64-abb0-280c2f9077e4/restore/ status=200 duration_ms=9 user=admin@example.com
+2026-04-29 05:39:17,474 INFO request_id=ae870ba7-c6ef-4fc0-9074-c4e9418e7a8c method=PATCH path=/api/v1/users/cfaa7ea3-add0-4a39-a9d5-de13d5a2e9c6/set_role/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 05:39:17,475 WARNING Forbidden: /api/v1/users/cfaa7ea3-add0-4a39-a9d5-de13d5a2e9c6/set_role/
+2026-04-29 05:39:17,778 INFO request_id=f056da27-ab2a-4c9b-a965-6b4a3dff0e7f method=PATCH path=/api/v1/users/5e194168-6e11-4ae7-abad-ad9844973916/set_role/ status=400 duration_ms=1 user=admin@example.com
+2026-04-29 05:39:17,779 WARNING Bad Request: /api/v1/users/5e194168-6e11-4ae7-abad-ad9844973916/set_role/

@@ -60,7 +60,7 @@ class UserViewSet(viewsets.ModelViewSet):
         if self.action in ["destroy", "restore", "set_role"]:
             return [IsAuthenticated(), IsAdminRole()]
 
-        if self.action in ["me", "update_me"]:
+        if self.action == "me":
             return [IsAuthenticated()]
 
         return [IsAuthenticated()]
@@ -69,12 +69,20 @@ class UserViewSet(viewsets.ModelViewSet):
         return selectors.get_active_users()
 
     def perform_destroy(self, instance):
-        services.soft_delete_user(instance)
+        services.soft_delete_user(
+            instance,
+            actor=self.request.user,
+            request=self.request,
+        )
 
     @action(detail=True, methods=["patch"])
     def restore(self, request, pk=None):
         user = User.objects.get(id=pk)
-        user = services.restore_user(user)
+        user = services.restore_user(
+            user,
+            actor=request.user,
+            request=request,
+        )
         return Response(UserDetailSerializer(user).data)
 
     @action(detail=True, methods=["patch"])
@@ -83,7 +91,12 @@ class UserViewSet(viewsets.ModelViewSet):
         serializer.is_valid(raise_exception=True)
 
         user = selectors.get_user_by_id(pk)
-        user = services.change_user_role(user, serializer.validated_data["role"])
+        user = services.change_user_role(
+            user,
+            serializer.validated_data["role"],
+            actor=request.user,
+            request=request,
+        )
 
         return Response(UserDetailSerializer(user).data)
 
