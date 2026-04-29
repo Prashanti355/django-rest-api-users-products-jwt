@@ -59,11 +59,11 @@ jobs:
           pip install -r requirements/local.txt
         
       - name: Lint with Ruff
-        run: ruff check .
+        run: ruff check --config pyproject.toml .
 
       - name: Format check with Black
-        run: black --check .    
-
+        run: black --config pyproject.toml --check .
+        
       - name: Run migrations
         working-directory: app
         run: python manage.py migrate
