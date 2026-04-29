@@ -1,17 +1,14 @@
+from apps.users.auth_views import (
+    CustomTokenObtainPairView,
+    CustomTokenRefreshView,
+)
 from django.contrib import admin
 from django.urls import include, path
-
 from drf_spectacular.views import (
     SpectacularAPIView,
     SpectacularRedocView,
     SpectacularSwaggerView,
 )
-
-from apps.users.auth_views import (
-    CustomTokenObtainPairView,
-    CustomTokenRefreshView,
-)
-
 
 urlpatterns = [
     path("admin/", admin.site.urls),

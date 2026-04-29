@@ -1,5 +1,5 @@
-from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 from apps.audit.models import AuditLog
 from apps.audit.services import create_audit_log
