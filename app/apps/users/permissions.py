@@ -24,10 +24,7 @@ class IsSelfOrAdmin(BasePermission):
         return bool(
             request.user
             and request.user.is_authenticated
-            and (
-                request.user.role == "ADMIN"
-                or obj.id == request.user.id
-            )
+            and (request.user.role == "ADMIN" or obj.id == request.user.id)
         )
 
 

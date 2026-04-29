@@ -108,10 +108,13 @@ def test_search_products(admin_client, product):
 
 @pytest.mark.django_db
 def test_filter_products_by_price(admin_client, product):
-    response = admin_client.get("/api/v1/products/by_price/?min_price=10000&max_price=13000")
+    response = admin_client.get(
+        "/api/v1/products/by_price/?min_price=10000&max_price=13000"
+    )
 
     assert response.status_code == 200
     assert len(response.data) >= 1
+
 
 @pytest.mark.django_db
 def test_staff_can_update_product(staff_client, product):
@@ -221,4 +224,4 @@ def test_search_products_without_results(admin_client):
     response = admin_client.get("/api/v1/products/search/?q=noexiste")
 
     assert response.status_code == 200
-    assert len(response.data) == 0    
+    assert len(response.data) == 0
