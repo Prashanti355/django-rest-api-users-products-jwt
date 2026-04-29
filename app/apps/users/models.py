@@ -59,13 +59,17 @@ class User(AbstractUser):
         self.is_deleted = True
         self.is_active = False
         self.deleted_at = timezone.now()
-        self.save(update_fields=["is_deleted", "is_active", "deleted_at", "modified_at"])
+        self.save(
+            update_fields=["is_deleted", "is_active", "deleted_at", "modified_at"]
+        )
 
     def restore(self):
         self.is_deleted = False
         self.is_active = True
         self.deleted_at = None
-        self.save(update_fields=["is_deleted", "is_active", "deleted_at", "modified_at"])
+        self.save(
+            update_fields=["is_deleted", "is_active", "deleted_at", "modified_at"]
+        )
 
     def verify_email(self):
         self.email_verified = True

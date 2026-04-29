@@ -24,9 +24,7 @@ def get_product_by_id(product_id):
 def search_products(query):
     return get_active_products().filter(
         name__icontains=query
-    ) | get_active_products().filter(
-        description__icontains=query
-    )
+    ) | get_active_products().filter(description__icontains=query)
 
 
 def filter_products_by_price(min_price=None, max_price=None):

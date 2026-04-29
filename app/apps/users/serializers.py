@@ -53,6 +53,7 @@ class UserUpdateSerializer(serializers.ModelSerializer):
 
     def update(self, instance, validated_data):
         return super().update(instance, validated_data)
-    
+
+
 class UserRoleUpdateSerializer(serializers.Serializer):
     role = serializers.ChoiceField(choices=User.Role.choices)

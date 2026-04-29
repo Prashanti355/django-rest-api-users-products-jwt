@@ -1,15 +1,21 @@
 [tool.black]
 line-length = 88
 target-version = ["py312"]
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | migrations
+)/
+'''
 
 [tool.ruff]
 line-length = 88
 target-version = "py312"
+exclude = [
+    "*/migrations/*",
+]
 
 [tool.ruff.lint]
-select = ["E", "F", "I"]  # errores, fallos y orden de imports
-ignore = []
-
-[tool.ruff.format]
-quote-style = "double"
-indent-style = "space"
+select = ["E", "F", "I"]
+ignore = ["F403"]

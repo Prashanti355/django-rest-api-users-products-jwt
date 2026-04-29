@@ -54,6 +54,7 @@ def test_admin_can_change_user_role(admin_client, customer_user):
     assert response.status_code == 200
     assert response.data["role"] == "STAFF"
 
+
 @pytest.mark.django_db
 def test_user_can_update_me(customer_client):
     response = customer_client.patch(
@@ -114,4 +115,4 @@ def test_admin_cannot_set_invalid_role(admin_client, customer_user):
         format="json",
     )
 
-    assert response.status_code == 400    
+    assert response.status_code == 400
