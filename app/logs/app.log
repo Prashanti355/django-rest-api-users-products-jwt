@@ -623,3 +623,49 @@ LINE 1: ... "users"."created_at", "users"."modified_at" FROM "users" WH...
 2026-04-29 16:32:41,775 WARNING Forbidden: /api/v1/users/fc4e3ba8-dec7-4659-8400-4316b016e737/set_role/
 2026-04-29 16:32:42,072 INFO request_id=d4782c0d-4e5d-4ba4-a53b-8c3554891e41 method=PATCH path=/api/v1/users/29b1b212-f313-4677-812e-eaf7acdeccd3/set_role/ status=400 duration_ms=0 user=admin@example.com
 2026-04-29 16:32:42,072 WARNING Bad Request: /api/v1/users/29b1b212-f313-4677-812e-eaf7acdeccd3/set_role/
+2026-04-29 17:15:25,908 INFO /app/config/settings/base.py changed, reloading.
+2026-04-29 17:23:37,182 INFO request_id=2563ef60-8354-4b85-b5cd-6817332d4971 method=POST path=/api/v1/auth/login/ status=200 duration_ms=352 user=anonymous
+2026-04-29 17:23:37,496 INFO request_id=8b8660a6-1c64-469f-8611-60817ef1be75 method=POST path=/api/v1/auth/login/ status=200 duration_ms=143 user=anonymous
+2026-04-29 17:23:37,499 INFO request_id=9b204da4-4f36-499c-849e-612acc908a8c method=POST path=/api/v1/auth/refresh/ status=200 duration_ms=2 user=anonymous
+2026-04-29 17:23:37,653 INFO request_id=e53656b3-5da9-4bdd-b7f0-a7914cf6c8fc method=POST path=/api/v1/products/ status=201 duration_ms=5 user=admin@example.com
+2026-04-29 17:23:37,808 INFO request_id=01eaae33-8807-46ef-84b7-593035224dfa method=DELETE path=/api/v1/products/6b447a52-4175-4e05-8262-11537d3fc253/ status=204 duration_ms=3 user=admin@example.com
+2026-04-29 17:23:38,109 INFO request_id=ac941623-74c1-4c93-8097-74ab6adf1c88 method=PATCH path=/api/v1/users/a1f50c8f-42e7-4bf4-919b-a2b4315b120d/set_role/ status=200 duration_ms=9 user=admin@example.com
+2026-04-29 17:23:38,263 INFO request_id=9e66eac5-02c2-4928-a9c9-80cedf931850 method=GET path=/api/v1/audit-logs/ status=200 duration_ms=2 user=admin@example.com
+2026-04-29 17:23:38,422 INFO request_id=a12384e6-1b99-4db0-a9be-e077576a6789 method=GET path=/api/v1/audit-logs/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 17:23:38,424 WARNING Forbidden: /api/v1/audit-logs/
+2026-04-29 17:23:38,735 INFO request_id=7f70f923-38e8-4b6e-b05a-466f437ac2a1 method=POST path=/api/v1/auth/login/ status=200 duration_ms=151 user=anonymous
+2026-04-29 17:23:39,029 INFO request_id=9c82c091-ebb7-4c23-8e3d-68585212ed08 method=POST path=/api/v1/auth/login/ status=401 duration_ms=143 user=anonymous
+2026-04-29 17:23:39,029 WARNING Unauthorized: /api/v1/auth/login/
+2026-04-29 17:23:39,323 INFO request_id=5599e2af-f9e5-4a98-b1dd-2ea742105343 method=POST path=/api/v1/auth/login/ status=200 duration_ms=144 user=anonymous
+2026-04-29 17:23:39,327 INFO request_id=18a996dc-6dee-4db2-83bb-a6b24cf6ab14 method=POST path=/api/v1/auth/refresh/ status=200 duration_ms=2 user=anonymous
+2026-04-29 17:23:39,484 INFO request_id=75bb6d2b-16e7-4f18-844b-cf0ceb5aa240 method=POST path=/api/v1/products/ status=201 duration_ms=3 user=admin@example.com
+2026-04-29 17:23:39,636 INFO request_id=063d75f6-9e51-4188-92e6-0df823a3ea45 method=POST path=/api/v1/products/ status=201 duration_ms=3 user=staff@example.com
+2026-04-29 17:23:39,786 INFO request_id=1cc726b1-732d-49fe-9075-f2d9d77f7bd8 method=POST path=/api/v1/products/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 17:23:39,787 WARNING Forbidden: /api/v1/products/
+2026-04-29 17:23:40,088 INFO request_id=8e258332-330a-4dfc-b105-244dfa817107 method=GET path=/api/v1/products/ status=200 duration_ms=3 user=customer@example.com
+2026-04-29 17:23:40,240 INFO request_id=93457c40-bd55-4c7f-a8c9-b809156dccef method=DELETE path=/api/v1/products/a56c9319-e2a3-4eb3-af5a-ff6ccbdfe1bb/ status=204 duration_ms=2 user=admin@example.com
+2026-04-29 17:23:40,535 INFO request_id=3809c2da-812c-46c6-bfd1-83d809b08c74 method=DELETE path=/api/v1/products/84dd3d66-731e-4fdb-821e-5237537f3152/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 17:23:40,535 WARNING Forbidden: /api/v1/products/84dd3d66-731e-4fdb-821e-5237537f3152/
+2026-04-29 17:23:40,688 INFO request_id=5504a23c-0542-4cae-9650-4d59736d520c method=GET path=/api/v1/products/search/ status=200 duration_ms=3 user=admin@example.com
+2026-04-29 17:23:40,841 INFO request_id=df17b2dd-8180-4013-a99d-df150a8001a4 method=GET path=/api/v1/products/by_price/ status=200 duration_ms=3 user=admin@example.com
+2026-04-29 17:23:41,143 INFO request_id=e1efeed5-1768-4ac7-80be-182edd3d1757 method=PATCH path=/api/v1/products/ff9c72d1-c6e2-45a2-b3ff-e1f645d022e0/ status=200 duration_ms=5 user=staff@example.com
+2026-04-29 17:23:41,307 INFO request_id=e389a7f9-8b8c-4f6a-b262-e9cf2918feca method=PATCH path=/api/v1/products/128afa0f-7109-47f5-a942-f0260d884fae/restore/ status=200 duration_ms=4 user=admin@example.com
+2026-04-29 17:23:41,605 INFO request_id=39d923fc-4541-4d77-8f7e-f069fb61362f method=GET path=/api/v1/products/ status=200 duration_ms=2 user=customer@example.com
+2026-04-29 17:23:41,763 INFO request_id=106578c7-5304-4bce-a837-de2a5113b449 method=POST path=/api/v1/products/ status=400 duration_ms=2 user=admin@example.com
+2026-04-29 17:23:41,764 WARNING Bad Request: /api/v1/products/
+2026-04-29 17:23:41,914 INFO request_id=7f47bb9d-9690-4497-b023-452cd2b9f024 method=POST path=/api/v1/products/ status=400 duration_ms=1 user=admin@example.com
+2026-04-29 17:23:41,915 WARNING Bad Request: /api/v1/products/
+2026-04-29 17:23:42,078 INFO request_id=8c3fada0-7ea6-4925-ae95-b07a07434797 method=GET path=/api/v1/products/search/ status=200 duration_ms=1 user=admin@example.com
+2026-04-29 17:23:42,273 INFO request_id=465c6d4f-3928-4ece-b564-3908f892a666 method=POST path=/api/v1/users/ status=201 duration_ms=188 user=anonymous
+2026-04-29 17:23:42,592 INFO request_id=c64ad1f1-8496-4c65-81da-2d14a339689b method=GET path=/api/v1/users/ status=200 duration_ms=3 user=admin@example.com
+2026-04-29 17:23:42,744 INFO request_id=ec1aeff0-dcea-4ecd-a57a-be8fa6ad43d7 method=GET path=/api/v1/users/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 17:23:42,745 WARNING Forbidden: /api/v1/users/
+2026-04-29 17:23:42,901 INFO request_id=dafb67e9-7a02-4825-8d8b-f887aed705c0 method=GET path=/api/v1/users/me/ status=200 duration_ms=4 user=customer@example.com
+2026-04-29 17:23:43,209 INFO request_id=4ee530cc-c883-493e-b5f3-034318e6db20 method=PATCH path=/api/v1/users/3bd82a4d-8ae5-462b-a9db-da7e6ec05b2e/set_role/ status=200 duration_ms=6 user=admin@example.com
+2026-04-29 17:23:43,385 INFO request_id=f0cebf02-8034-4382-88e1-8fd064d08640 method=PATCH path=/api/v1/users/me/ status=200 duration_ms=6 user=customer@example.com
+2026-04-29 17:23:43,693 INFO request_id=632dd645-563d-488c-940d-5b0a3e2589e1 method=DELETE path=/api/v1/users/954b6e93-0116-4bec-98d6-893c9d956373/ status=204 duration_ms=5 user=admin@example.com
+2026-04-29 17:23:44,001 INFO request_id=379d77bf-d8c5-43eb-8626-d696d8715b6c method=PATCH path=/api/v1/users/63af54fd-7398-4cd0-93f4-2cf58ea4a76c/restore/ status=200 duration_ms=7 user=admin@example.com
+2026-04-29 17:23:44,153 INFO request_id=023cf0fe-362b-4c39-b681-f893eb5e59a5 method=PATCH path=/api/v1/users/79612c74-81ff-4a76-ab17-87357d33622e/set_role/ status=403 duration_ms=0 user=customer@example.com
+2026-04-29 17:23:44,154 WARNING Forbidden: /api/v1/users/79612c74-81ff-4a76-ab17-87357d33622e/set_role/
+2026-04-29 17:23:44,445 INFO request_id=63db9346-d17e-4c17-abb6-0c5623ac431c method=PATCH path=/api/v1/users/b0b2369a-2c97-43f9-91bd-5c0a7457516f/set_role/ status=400 duration_ms=0 user=admin@example.com
+2026-04-29 17:23:44,445 WARNING Bad Request: /api/v1/users/b0b2369a-2c97-43f9-91bd-5c0a7457516f/set_role/
