@@ -1,16 +1,19 @@
-from apps.users.auth_views import (
-    CustomTokenObtainPairView,
-    CustomTokenRefreshView,
-)
 from django.contrib import admin
+from django.http import JsonResponse
 from django.urls import include, path
+from django.views.decorators.http import require_GET
 from drf_spectacular.views import (
     SpectacularAPIView,
     SpectacularRedocView,
     SpectacularSwaggerView,
 )
-from django.http import JsonResponse
-from django.views.decorators.http import require_GET
+
+from apps.users.auth_views import (
+    CustomTokenObtainPairView,
+    CustomTokenRefreshView,
+)
+
+
 @require_GET
 def health_check(request):
     return JsonResponse(
@@ -20,10 +23,10 @@ def health_check(request):
         }
     )
 
+
 urlpatterns = [
     path("", health_check, name="root-health-check"),
     path("api/health/", health_check, name="health-check"),
-
     path("admin/", admin.site.urls),
     path("api/v1/", include("apps.users.urls")),
     path("api/v1/", include("apps.products.urls")),
@@ -34,7 +37,9 @@ urlpatterns = [
         name="token_obtain_pair",
     ),
     path(
-        "api/v1/auth/refresh/", CustomTokenRefreshView.as_view(), name="token_refresh"
+        "api/v1/auth/refresh/",
+        CustomTokenRefreshView.as_view(),
+        name="token_refresh",
     ),
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     path(
