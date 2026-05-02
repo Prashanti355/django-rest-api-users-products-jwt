@@ -1,4 +1,5 @@
 import pytest
+
 from apps.audit.models import AuditLog
 from apps.products.models import Product
 
