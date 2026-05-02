@@ -1,11 +1,14 @@
 from django.contrib.auth import get_user_model
+from django_filters.rest_framework import DjangoFilterBackend
 from drf_spectacular.utils import extend_schema, extend_schema_view
 from rest_framework import viewsets
 from rest_framework.decorators import action
+from rest_framework.filters import OrderingFilter, SearchFilter
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 
 from apps.users import selectors, services
+from apps.users.filters import UserFilter
 from apps.users.permissions import IsAdminRole, IsSelfOrAdmin
 from apps.users.serializers import (
     UserCreateSerializer,
@@ -31,6 +34,12 @@ User = get_user_model()
 )
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
+
+    filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    filterset_class = UserFilter
+    search_fields = ["email", "first_name", "last_name"]
+    ordering_fields = ["email", "role", "created_at", "modified_at"]
+    ordering = ["-created_at"]
 
     def get_serializer_class(self):
         if self.action == "create":

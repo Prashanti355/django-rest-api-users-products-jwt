@@ -175,7 +175,8 @@ def test_customer_can_only_see_active_products(customer_client, admin_user):
     response = customer_client.get("/api/v1/products/")
 
     assert response.status_code == 200
-    product_names = [item["name"] for item in response.data]
+    products = response.data["results"]
+    product_names = [item["name"] for item in products]
 
     assert "Producto activo" in product_names
     assert "Producto inactivo" not in product_names

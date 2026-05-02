@@ -1,10 +1,13 @@
+from django_filters.rest_framework import DjangoFilterBackend
 from drf_spectacular.utils import extend_schema, extend_schema_view
 from rest_framework import viewsets
 from rest_framework.decorators import action
+from rest_framework.filters import OrderingFilter, SearchFilter
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from apps.products import selectors, services
+from apps.products.filters import ProductFilter
 from apps.products.models import Product
 from apps.products.permissions import IsAdminOnly, IsAdminOrStaff
 from apps.products.serializers import (
@@ -28,6 +31,12 @@ from apps.products.serializers import (
 )
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
+
+    filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    filterset_class = ProductFilter
+    search_fields = ["name", "description", "product_key"]
+    ordering_fields = ["name", "price", "stock", "created_at", "modified_at"]
+    ordering = ["-created_at"]
 
     def get_queryset(self):
         return selectors.get_visible_products_for_user(self.request.user)
